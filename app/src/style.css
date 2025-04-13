@@ -1,0 +1,157 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Define CSS Variables */
+  --primary-color: #007aff; /* iOS Blue */
+  --primary-color-dark: #0056b3;
+  --secondary-color: #6c757d; /* Bootstrap Secondary */
+  --secondary-color-dark: #545b62;
+  --danger-color: #dc3545; /* Bootstrap Danger */
+  --danger-color-dark: #a71d2a;
+  --light-bg: #f8f9fa;
+  --dark-text: #212529;
+  --medium-text: #6c757d;
+  --border-color: #dee2e6;
+  --nav-height: 60px; /* Define nav height */
+  --theme-color: #4DBA87; /* From manifest */
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Add Base Button Styles */
+.btn {
+  padding: 0.5rem 1rem; /* Slightly larger default padding */
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary-color, #007aff); /* Use CSS variable */
+  color: #fff;
+  border-color: var(--primary-color, #007aff);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-color-dark, #0056b3);
+  border-color: var(--primary-color-dark, #0056b3);
+  color: #fff;
+}
+.btn-primary:disabled {
+    background-color: #a0cfff;
+    border-color: #a0cfff;
+    cursor: not-allowed;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--secondary-color, #6c757d);
+  color: #fff;
+  border-color: var(--secondary-color, #6c757d);
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--secondary-color-dark, #545b62);
+  border-color: var(--secondary-color-dark, #545b62);
+  color: #fff;
+}
+.btn-secondary:disabled {
+    background-color: #c5c8cb;
+    border-color: #c5c8cb;
+    cursor: not-allowed;
+}
+
+/* Danger Button */
+.btn-danger {
+  background-color: var(--danger-color, #dc3545);
+  color: #fff;
+  border-color: var(--danger-color, #dc3545);
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: var(--danger-color-dark, #a71d2a);
+  border-color: var(--danger-color-dark, #a71d2a);
+  color: #fff;
+}
+.btn-danger:disabled {
+    background-color: #f1a0a8;
+    border-color: #f1a0a8;
+    cursor: not-allowed;
+}
+
+/* Back/Subtle Button */
+.btn-back {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.btn-back:hover,
+.btn-back:focus {
+  background-color: #e2e6ea;
+  border-color: #bbb;
+  color: #333;
+}
+
+/* Small Button Modifier */
+.btn-sm {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+/* Add Button to input group */
+.location-input-group .btn {
+    border-radius: 0 4px 4px 0; /* Adjust radius for input group */
+}
+
+/* Basic Responsiveness for Forms */
+@media (max-width: 600px) {
+    .form-group {
+        /* Ensure single column layout on small screens */
+        margin-bottom: 1rem; 
+    }
+
+    /* Stack header buttons if needed */
+    .view-header {
+        /* Example: Allow wrapping if buttons get too long */
+        /* flex-wrap: wrap; */
+        /* gap: 0.5rem; */
+    }
+}
