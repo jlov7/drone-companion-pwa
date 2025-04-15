@@ -1,0 +1,35 @@
+{
+  "name": "DroneLogger Pro",
+  "short_name": "DroneLogger",
+  "description": "Advanced drone flight logging and management application",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "utilities"],
+  "dir": "ltr",
+  "lang": "en-US",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Start Flight",
+      "url": "/flights/new",
+      "description": "Start logging a new flight"
+    },
+    {
+      "name": "Dashboard",
+      "url": "/",
+      "description": "View drone dashboard"
+    }
+  ]
+}
